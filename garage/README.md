@@ -1,6 +1,6 @@
 # garage
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
+![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.1.0](https://img.shields.io/badge/AppVersion-v2.1.0-informational?style=flat-square)
 
 S3-compatible object store for small self-hosted geo-distributed deployments.
 
@@ -87,7 +87,7 @@ S3-compatible object store for small self-hosted geo-distributed deployments.
 | gatewayApi.s3.web.matches | list | `[{"path":{"type":"PathPrefix","value":"/"}}]` | Matches for the default rule |
 | gatewayApi.s3.web.parentRefs | list | `[]` | Gateway reference that the HTTPRoute should bind against |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"dxflrs/amd64_garage"` | default to amd64 docker image |
+| image.repository | string | `"dxflrs/garage"` | default to Docker image |
 | image.tag | string | `""` | set the image tag, please prefer using the chart version and not this to avoid compatibility issues |
 | imagePullSecrets | list | `[]` | set if you need credentials to pull your custom image |
 | ingress.s3.api.annotations | object | `{}` |  |
