@@ -28,6 +28,12 @@ S3-compatible object store for small self-hosted geo-distributed deployments.
 | clusterConfig.enabled | bool | `false` | Enable the cluster configuration job |
 | clusterConfig.extraCommands | list | `[]` | Extra commands to run |
 | clusterConfig.image.repository | string | `""` | Image to use for the configuration job (defaults to the same as garage) |
+| clusterConfig.toolsImage.repository | string | `busybox` | Image to use for the get-busybox-tools init job |
+| clusterConfig.toolsImage.tag | string | `musl` | Tag to use for the get-busybox-tools init job |
+| clusterConfig.toolsImage.pullPolicy | string | `IfNotPresent` | Pull policy to use for the get-busybox-tools init job |
+| clusterConfig.configureImage.repository | string | `busybox` | Image to use for the configureImage job |
+| clusterConfig.configureImage.tag | string | `latest` | Tag to use for the configure job |
+| clusterConfig.configureImage.pullPolicy | string | `IfNotPresent` | Pull policy to use for the configureImage job |
 | clusterConfig.imagePullSecrets | list | `[]` | Image pull secrets |
 | clusterConfig.keys | object | `{}` | Dict of keys to create keyId format: must start with 'GK' followed by 24 hex-encoded characters (12 bytes) secretKey format: must be 64 hex-encoded characters (32 bytes) |
 | clusterConfig.layout.capacity | string | `""` | Capacity to assign to nodes. If empty, defaults to persistence.data.size |
