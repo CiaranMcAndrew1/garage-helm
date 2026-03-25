@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  garage:
+  - apiVersion: v2
+    appVersion: v2.2.0
+    created: "2026-03-25T11:59:47.67026415Z"
+    description: S3-compatible object store for small self-hosted geo-distributed
+      deployments.
+    digest: 663933beeda30afb562eb48122c8c933b1e6859a2c08b9c1fa6af065189444d3
+    home: https://garagehq.deuxfleurs.fr/
+    icon: https://garagehq.deuxfleurs.fr/images/garage-logo.svg
+    keywords:
+    - geo-distributed
+    - read-after-write-consistency
+    - s3-compatible
+    maintainers:
+    - name: alvsanand
+    name: garage
+    sources:
+    - https://git.deuxfleurs.fr/Deuxfleurs/garage.git
+    - https://github.com/datahub-local/garage-helm/garage
+    type: application
+    urls:
+    - https://github.com/CiaranMcAndrew1/garage-helm/releases/download/garage-0.2.1/garage-0.2.1.tgz
+    version: 0.2.1
+generated: "2026-03-25T11:59:47.670291691Z"
